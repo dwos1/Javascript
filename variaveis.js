@@ -1,10 +1,10 @@
+const prompt = require('prompt-sync')();
 let contador = 1;
-let total = 0;
-
+const numero = Number(prompt("Escreva o numero: "));
+let resultado = 0;
 while(contador<=5){
-    total = total + contador;
-    console.log(total)
-   
-    
-    contador =  contador + 1 
+    resultado = contador * numero
+    console.log(numero, "X", contador, "=", resultado) ;
+    contador = contador + 1;
 }
+

@@ -1,10 +1,10 @@
-const prompt = require('prompt-sync')();
-let contador = 1;
-const numero = Number(prompt("Escreva o numero: "));
-let resultado = 0;
-while(contador<=5){
-    resultado = contador * numero
-    console.log(numero, "X", contador, "=", resultado) ;
-    contador = contador + 1;
-}
+const prompt = require("prompt-sync")();
 
+let nota = Number(prompt("Digite nota: "))
+
+while(Number.isNaN(nota) ||
+ nota<0 || nota>10){
+    console.log("Nota Inválida")
+    nota = Number(prompt("Digite novamente nota: "))
+ }
+ console.log("A nota é: ", nota)

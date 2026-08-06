@@ -1,16 +1,21 @@
 const prompt = require("prompt-sync")();
-
-let contador = 1;
+let media = 0;
 let total = 0;
 
-while(contador<=5){
-   let idade = Number(prompt(`Digite o número ${contador} : `));
-
-   while(Number.isNaN(idade) || !Number.isInteger(idade) ||  idade < 0 || idade > 120){
-      console.log("Idade inválida")
-      idade = Number(prompt(`Digite o número ${contador} : `));
-   }
-   contador = 1 + contador;
-   total = idade + total;
+for(let contador = 1; contador<=5; contador++){
+       let nota = Number(prompt(`Digite uma nota ${contador}: `));
+       while(Number.isNaN(nota) || nota<0 || nota>10 ){
+        console.log("Número inválido")
+        nota = Number(prompt(`Digite novamente ${contador}: `));
+       }
+       
+       total = nota + total;
 }
-console.log("O total de idades é: ", total)
+        media = total/5;
+        console.log("A média é: ", media)
+
+        if(media>=7){
+            console.log("Aluno aprovado");
+        }else if(media>=5){
+            console.log("Aluno de recuperação")
+        }else{console.log("Aluno reprovou")}

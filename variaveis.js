@@ -1,10 +1,24 @@
 const prompt = require("prompt-sync")();
 
-let nota = Number(prompt("Digite nota: "))
+let contador = 1;
+let total = 0;
 
-while(Number.isNaN(nota) ||
- nota<0 || nota>10){
-    console.log("Nota Inválida")
-    nota = Number(prompt("Digite novamente nota: "))
- }
- console.log("A nota é: ", nota)
+while (contador <= 5) {
+    const nota = Number(prompt(`Digite a nota ${contador}: `));
+
+    total = total + nota;
+    contador = contador + 1;
+}
+
+const media = total / 5;
+
+console.log("O total é:", total);
+console.log("A média é:", media);
+
+if (media >= 7) {
+    console.log("O aluno passou.");
+} else if (media >= 5) {
+    console.log("O aluno ficou de recuperação.");
+} else {
+    console.log("O aluno reprovou.");
+}

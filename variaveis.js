@@ -1,21 +1,22 @@
-const prompt = require("prompt-sync")();
-let media = 0;
-let total = 0;
+const prompt = require('prompt-sync')();
 
-for(let contador = 1; contador<=5; contador++){
-       let nota = Number(prompt(`Digite uma nota ${contador}: `));
-       while(Number.isNaN(nota) || nota<0 || nota>10 ){
-        console.log("Número inválido")
-        nota = Number(prompt(`Digite novamente ${contador}: `));
-       }
-       
-       total = nota + total;
+let opcao = Number(prompt("Digite a opção: "));
+
+while(opcao !=3){
+    switch(opcao){
+        case 1:{
+            console.log("oi");
+        }
+        break;
+        case 2:{
+            console.log("Tudo bem?");
+        }
+        break;
+      default: {
+        console.log("Numero errado")
+      }
 }
-        media = total/5;
-        console.log("A média é: ", media)
-
-        if(media>=7){
-            console.log("Aluno aprovado");
-        }else if(media>=5){
-            console.log("Aluno de recuperação")
-        }else{console.log("Aluno reprovou")}
+    
+        opcao = Number(prompt("Digite a opção: "));
+} 
+console.log("fim")

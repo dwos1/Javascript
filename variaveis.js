@@ -1,22 +1,14 @@
-const prompt = require('prompt-sync')();
-
-let opcao = Number(prompt("Digite a opção: "));
-
-while(opcao !=3){
-    switch(opcao){
-        case 1:{
-            console.log("oi");
-        }
-        break;
-        case 2:{
-            console.log("Tudo bem?");
-        }
-        break;
-      default: {
-        console.log("Numero errado")
-      }
+function verificarNota(nota){
+  if(nota>=7){
+    return("Aluno passou")
+  }else if(nota>=5){
+    return("Aluno de recuperação")
+  }else{
+    return("Aluno reprovou")
+  }
 }
-    
-        opcao = Number(prompt("Digite a opção: "));
-} 
-console.log("fim")
+
+const resultado = verificarNota(10);
+
+console.log(resultado)
+

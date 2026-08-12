@@ -1,13 +1,13 @@
-function verificarTemperatura(temperatura){
-    if(temperatura<15){
-        return "frio";
-    }else if(temperatura<=29){
-        return "agradavel"
-    }else{ return "Quente";}
+function verificarPar(numero){
+    if(numero % 2 ===0){
+        return "Número é par";
+    }else{
+        return "Número não é par";
+    }
 }
 
-function mostrarTemperatura(temperatura){
-    console.log(verificarTemperatura(temperatura));
+function mostrarPar(numero){
+    console.log(verificarPar(numero));
 }
 
-mostrarTemperatura(30);
+mostrarPar(5);

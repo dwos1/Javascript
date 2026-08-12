@@ -1,13 +1,15 @@
-function verificarPar(numero){
-    if(numero % 2 ===0){
-        return "Número é par";
+function verificarIdade(idade){
+    if(Number.isNaN(idade) || !Number.isInteger(idade) || idade<0 || idade>120){
+        return "erro";
+    }else if(idade>=18){
+        return "maior de idade";
     }else{
-        return "Número não é par";
+        return "menor de idade";
     }
 }
 
-function mostrarPar(numero){
-    console.log(verificarPar(numero));
+function mostrarIdade(idade){
+    console.log(verificarIdade(idade));
 }
 
-mostrarPar(5);
+mostrarIdade(129);

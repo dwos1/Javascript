@@ -1,15 +1,17 @@
-function idade(numero1){
-    return idade;
-
-}
-function mostraridade(numero1){
-    if(Number.isNaN(numero1) || !Number.isInteger(numero1) || numero1>120 || numero1<0){
-        console.log("ERRO")
-    }else if(numero1>=18){
-        console.log("É de maior")}else{
-            console.log("É menor")
-        }
-    
+function verificarNota(nota){
+    if(Number.isNaN(nota) || nota>10 || nota<0){
+        return "erro";
+    }else if(nota>=7){
+        return "aprovado";
+    }else if(nota>=5){
+        return "recuperação";
+    }else{
+        return "repetiu";
+    }
 }
 
-mostraridade(18);
+function mostrarNota(nota){
+    console.log(verificarNota(nota))
+}
+
+mostrarNota(8);

@@ -1,17 +1,13 @@
-function verificarNota(nota){
-    if(Number.isNaN(nota) || nota>10 || nota<0){
-        return "erro";
-    }else if(nota>=7){
-        return "aprovado";
-    }else if(nota>=5){
-        return "recuperação";
-    }else{
-        return "repetiu";
-    }
+function verificarTemperatura(temperatura){
+    if(temperatura<15){
+        return "frio";
+    }else if(temperatura<=29){
+        return "agradavel"
+    }else{ return "Quente";}
 }
 
-function mostrarNota(nota){
-    console.log(verificarNota(nota))
+function mostrarTemperatura(temperatura){
+    console.log(verificarTemperatura(temperatura));
 }
 
-mostrarNota(8);
+mostrarTemperatura(30);

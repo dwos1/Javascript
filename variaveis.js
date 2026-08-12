@@ -1,8 +1,15 @@
-function mediaEscola(nota1,nota2){
-        return (nota1+nota2) / 2;
+function idade(numero1){
+    return idade;
+
 }
-function mostrarMedia(nota1,nota2){
-        console.log(mediaEscola(nota1,nota2));
+function mostraridade(numero1){
+    if(Number.isNaN(numero1) || !Number.isInteger(numero1) || numero1>120 || numero1<0){
+        console.log("ERRO")
+    }else if(numero1>=18){
+        console.log("É de maior")}else{
+            console.log("É menor")
+        }
+    
 }
 
-mostrarMedia(9,5);
+mostraridade(18);

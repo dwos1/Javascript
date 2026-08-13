@@ -1,19 +1,21 @@
-function verificarIdade(idade){
-    if( Number.isNaN(idade) || idade<0 || idade>120){
-        return "erro";} 
-    else if(idade>=12 && idade<=17){
-        return "adolescente";
-    }else if(idade>=18 && idade<=59 ){
-        return "adulto";
-    }else if(idade>=60){
-        return "idoso";
+function verificarNota(nota1,nota2){
+    let media = 0;
+    media = (nota1+nota2) / 2;
+    if(media<0 || media>10){
+        return "erro";
+    }else if(media<5){
+        return "reprovado";
+    }else if(media>=5 && media<7){
+        return "recuperação";
+    }else if (media>=7 && media<9){
+        return "aprovado";
     }else{
-        return "criança";
+        return "excelente";
     }
 }
 
-function mostrarIdade(idade){
-    console.log(verificarIdade(idade));
+function mostrarNota(nota1,nota2){
+    console.log(verificarNota(nota1,nota2));
 }
 
-mostrarIdade(120);
+mostrarNota(9.9,8.9);

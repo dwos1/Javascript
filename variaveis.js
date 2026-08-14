@@ -1,13 +1,18 @@
-function getBancodeDados(bancodeDados){
-    if(bancodeDados<=9){
+function porta(senha){
+    if(senha === 1234){
         return true;
     }else{
-        return false;
+       return false;
     }
 }
 
-function mostrarBancodeDados(bancodeDados){
-    console.log(getBancodeDados(bancodeDados));
+function mostrarPorta(senha){
+    if (porta(senha)){
+        return "porta aberta";
+    }else{
+        return "porta fechada";
+    }
 }
 
-mostrarBancodeDados(9);
+console.log(mostrarPorta(1234))
+

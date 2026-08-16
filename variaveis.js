@@ -1,8 +1,8 @@
-function contar(numero){
-    for(let contador = 1; contador<=numero; contador++){
+function contagemRegressiva(numero){
+    for(let contador = numero; contador>=1; contador--){
         console.log(contador);
     }
 }
 
 
-contar(5);
+contagemRegressiva(5);

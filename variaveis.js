@@ -1,7 +1,8 @@
-function contar(){
-    for(let contador = 1; contador<=10; contador++){
-                console.log(contador)
+function contar(numero){
+    for(let contador = 1; contador<=numero; contador++){
+        console.log(contador);
     }
 }
 
-contar();
+
+contar(5);

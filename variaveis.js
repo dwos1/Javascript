@@ -1,17 +1,7 @@
-function porta(senha){
-    if(senha == 1234){
-        return true;
-    }else{
-        return false;
+function contar(){
+    for(let contador = 1; contador<=10; contador++){
+                console.log(contador)
     }
 }
 
-function mostrarPorta(senha){
-    if(porta = 1234){
-        console.log("Pode abrir");
-    }else{
-        console.log("Não pode abrir");
-    }
-}
-
-mostrarPorta(1234);
+contar();

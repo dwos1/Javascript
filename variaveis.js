@@ -1,9 +1,10 @@
-function soma(numero){
-    let soma = 0;
-    for(let contador= 0; contador<=numero; contador = contador + 2){
-     soma = soma + contador;
+function contarPares(numero){
+    let par = 0;
+    for(let contador = 2; contador<=numero; contador = contador + 2){
+        par = contador + par;
+        
+    }
+    console.log(par)
 }
-    console.log(soma);
- }
-    
-soma(10);
+
+contarPares(10);

@@ -1,10 +1,9 @@
-function multiplicarAte(numero){
-    let multiplicacao = 1;
-    for(let contador = 1; contador<= numero; contador = contador + 1){
-    multiplicacao = multiplicacao * contador;
-       
+function somarAte(numero){
+    let soma = 0;
+    for(let contador = 1; contador<=numero; contador++){
+        soma = soma + contador;
+        
+    }
+    console.log(soma)
 }
-     console.log(multiplicacao);
-}
-
-multiplicarAte(4);
+somarAte(5);

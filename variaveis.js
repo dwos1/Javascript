@@ -1,9 +1,9 @@
-function somarAte(numero){
-    let soma = 0;
-    for(let contador = 1; contador<=numero; contador++){
-        soma = soma + contador;
+function multiploDeTres(numero){
+    let mutiplo = 0;
+        for(let contador = 3; contador<=numero; contador = contador + 3 ){
+        mutiplo = mutiplo + 1;
         
     }
-    console.log(soma)
+    console.log(mutiplo);
 }
-somarAte(5);
+multiploDeTres(12);

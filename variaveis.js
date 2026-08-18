@@ -1,11 +1,10 @@
-function contarPares(numero){
-    let par = 0;
-    for(let contador = 2; contador<=numero; contador = contador + 2){
-        
-        par = par + 1;
-    }
-    
-    console.log(par)
+function multiplicarAte(numero){
+    let multiplicacao = 1;
+    for(let contador = 1; contador<= numero; contador = contador + 1){
+    multiplicacao = multiplicacao * contador;
+       
+}
+     console.log(multiplicacao);
 }
 
-contarPares(10);
+multiplicarAte(4);

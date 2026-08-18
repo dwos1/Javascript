@@ -1,9 +1,9 @@
-function multiploDeTres(numero){
-    let mutiplo = 0;
-        for(let contador = 3; contador<=numero; contador = contador + 3 ){
-        mutiplo = mutiplo + 1;
+function somarRegressivo(numero){
+        let soma = 0;
+        for(let contador = numero; contador>=1; contador = contador - 1 ){
+        soma = soma + 1;
         
     }
-    console.log(mutiplo);
+    console.log(soma);
 }
-multiploDeTres(12);
+somarRegressivo(5);

@@ -1,10 +1,10 @@
-function verificarSoma(numero){
+function verificarQuantidadeSoma(numero){
     let soma = 0;
     for(let contador = 1; contador<=numero; contador++){
-        soma = contador + soma;
+        soma = 1 + soma;
         console.log(soma)
     }
     
 }
 
-verificarSoma(8)
+verificarQuantidadeSoma(8)

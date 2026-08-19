@@ -1,9 +1,10 @@
-function somarRegressivo(numero){
-        let soma = 0;
-        for(let contador = numero; contador>=1; contador = contador - 1 ){
-        soma = soma + 1;
-        
+function verificarSoma(numero){
+    let soma = 0;
+    for(let contador = 1; contador<=numero; contador++){
+        soma = contador + soma;
+        console.log(soma)
     }
-    console.log(soma);
+    
 }
-somarRegressivo(5);
+
+verificarSoma(8)

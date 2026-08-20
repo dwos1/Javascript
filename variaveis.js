@@ -1,10 +1,10 @@
-function verQuantidadeMultiplicacao(numero){
-    let mutiplicacao = 1;
+function somarAte(numero){
+    let soma = 0;
     for(let contador = 1; contador<=numero; contador++){
-        mutiplicacao = 1 + mutiplicacao;
-console.log(mutiplicacao)
+        soma = soma + contador;
+        console.log(soma)
     }
     
 }
 
-verMultiplicacao(8);
+somarAte(8);

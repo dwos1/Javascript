@@ -1,10 +1,10 @@
-function somarAte(numero){
-    let soma = 0;
-    for(let contador = 1; contador<=numero; contador++){
-        soma = soma + contador;
-        console.log(soma)
+function contarPares(numero){
+    let par = 0;
+    for(let contador = 1; contador<=numero; contador = contador + 2 ){
+        par = par + 1;
+
     }
-    
+    console.log(par)
 }
 
-somarAte(8);
+contarPares(12);

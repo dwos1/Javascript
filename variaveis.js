@@ -1,10 +1,13 @@
-function regressivaPares(numero){
+function somaDePares(numero){
+    let contador = 2;
     let par = 0;
-    for(let contador = numero; contador>=1; contador = contador - 2){
+    while(contador<=numero){
         par = contador + par;
-        
-    }
-    console.log(par)
+        contador = contador + 2;
+         
 }
+        console.log(par)
+    }
+   
 
-regressivaPares(10)
+somaDePares(10);

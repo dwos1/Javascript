@@ -1,14 +1,15 @@
-function contadorDePares(numero){
-    let contador = 2;
-    let par = 0;
+function somarImpares(numero){
+   let contador = 1;
+   let impar = 0;
     while(contador<=numero){
-        par = 1 + par;
-        contador = contador + 2;
-        
-         
+            
+            impar = impar + contador;
+            contador = contador + 2;
+           console.log(impar)
+            
+    
+        }
+     
 }
-        console.log(par)
-    }
-   
 
-contadorDePares(10);
+somarImpares(9);

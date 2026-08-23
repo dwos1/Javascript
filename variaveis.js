@@ -1,10 +1,14 @@
-function multiplicarAte(numero){
-    let multiplicar = 1;
+multiplicarAte(4)
+
+
+function contarMultiplicacao(numero){
     let contador = 1;
+    let multiplicacao = 0;
     while(contador<=numero){
-        multiplicar = multiplicar * contador;
+        multiplicacao = multiplicacao + 1;
         contador = contador + 1;
-            
     }
-    console.log(multiplicar)
-}
+        console.log(multiplicacao);
+    }
+
+    contarMultiplicacao(4);

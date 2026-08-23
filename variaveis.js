@@ -1,12 +1,23 @@
-function notas(numero1, numero2){
-    return (numero1 + numero2) / 2; 
-}
-function mostrarNota(numero1,numero2){
-    if(numero1>10 || numero1<0 || numero2>10 || numero2<0){
-        console.log("inválido")
+function nota(nota1, nota2){
+    if(nota1>=0 && nota1<=10 && nota2>=0 && nota2<=10){
+        
+        return true;
     }else{
-    console.log(notas(numero1,numero2));
+        return false;
     }
+
 }
 
-mostrarNota(8,10);
+function validarNota(nota1, nota2){
+    let calcular = (nota1 + nota2) / 2;
+    if(nota(nota1,nota2) ){ 
+    
+    console.log(calcular)
+}else{
+    console.log("erro")
+}
+    console.log(nota(nota1,nota2));
+}
+
+validarNota(10,10);
+

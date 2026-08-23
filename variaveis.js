@@ -1,14 +1,13 @@
-
-
-
-function contarMultiplicacao(numero){
-    let contador = 1;
-    let multiplicacao = 0;
+function somarMultiplosDeTres(numero){
+    let contador = 3;
+    let multiploTres = 0;
     while(contador<=numero){
-        multiplicacao = multiplicacao + 1;
-        contador = contador + 1;
+       multiploTres = multiploTres + contador; 
+        contador = contador + 3;
+        
+        
     }
-        console.log(multiplicacao);
-    }
+    console.log(multiploTres)
+}
 
-    contarMultiplicacao(4);
+somarMultiplosDeTres(10)

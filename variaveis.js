@@ -1,4 +1,4 @@
-multiplicarAte(4)
+
 
 
 function contarMultiplicacao(numero){

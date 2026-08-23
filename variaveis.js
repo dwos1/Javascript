@@ -1,13 +1,12 @@
-function somarMultiplosDeTres(numero){
-    let contador = 3;
-    let multiploTres = 0;
-    while(contador<=numero){
-       multiploTres = multiploTres + contador; 
-        contador = contador + 3;
-        
-        
+function notas(numero1, numero2){
+    return (numero1 + numero2) / 2; 
+}
+function mostrarNota(numero1,numero2){
+    if(numero1>10 || numero1<0 || numero2>10 || numero2<0){
+        console.log("inválido")
+    }else{
+    console.log(notas(numero1,numero2));
     }
-    console.log(multiploTres)
 }
 
-somarMultiplosDeTres(10)
+mostrarNota(8,10);

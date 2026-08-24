@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function nota(nota1, nota2){
     if(nota1 >= 0 && nota1 <= 10 && nota2 >= 0 && nota2 <= 10){
         return true;
@@ -25,3 +26,24 @@ validarNota(10,10);
 
 
 
+=======
+function notaAluno(nota1, nota2){
+        if(nota1>=0 && nota1<=10 && nota2>=0 && nota2<=10){
+                return true;
+        }else{
+                return false;
+        }
+}
+
+function calcularNota(nota1, nota2){
+        return (nota1+nota2) / 2;
+}
+
+function validarNota(nota1, nota2){
+        if(notaAluno(nota1,nota2)){
+               console.log( calcularNota(nota1,nota2));
+        }else(console.log("Erro"))
+}
+
+validarNota(1,8);
+>>>>>>> c9826b6 (Estudo de quinta)

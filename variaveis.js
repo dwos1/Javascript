@@ -1,3 +1,5 @@
-let nomes = ["David", "João", "Luan"];
+let frutas = ["Uva", "Tomate", "Goiaba"];
 
-console.log(nomes[1], "é doido,", nomes[2], "é legal,", nomes[0], "é louco.");
+frutas[1] = "Jaca";
+
+console.log(frutas[1], frutas[2], frutas[0]);

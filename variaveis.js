@@ -1,5 +1,7 @@
-let frutas = ["Uva", "Tomate", "Goiaba"];
+let estudar = [];
 
-frutas[1] = "Jaca";
+estudar.push("Estudo")
+estudar.push("Programação")
+estudar.push("Ler")
 
-console.log(frutas[1], frutas[2], frutas[0]);
+console.log(estudar)

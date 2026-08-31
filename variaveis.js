@@ -1,7 +1,12 @@
-let estudar = [];
+function nota(nota1){
+    if(nota1>=7){
+        return true;
+    }else{
+        return false;
+    }
+}
+function validarNota(nota1){
+    console.log(nota(nota1));
+}
 
-estudar.push("Estudo")
-estudar.push("Programação")
-estudar.push("Ler")
-
-console.log(estudar)
+validarNota(8);

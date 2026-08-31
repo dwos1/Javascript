@@ -1,3 +1,6 @@
 let nome = ["david", "willians" , "silva"];
 
-console.log(nome[2])
+
+nome.pop();
+
+console.log(nome)

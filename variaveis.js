@@ -1,7 +1,5 @@
-let pais = ["Dinamarca", "Holanda", "França"]
+let paises = ["China", "Colombia"]
 
-pais.pop();
-pais.push("Venezuela")
-pais.unshift();
-
-console.log(pais)
+for(contador = 0; contador< paises.length; contador++ ){
+    console.log(paises[contador])
+}

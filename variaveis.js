@@ -1,7 +1,5 @@
-let paises = ["China", "Colombia", "Holanda", "Rússia"]
+let paises = ["Cuba", "França", "Luanda"];
 
-for(contador = 0; contador< paises.length; contador++ ){
-    
-    
+for(let contador = 0; contador < paises.length; contador++){
     console.log(paises[contador])
 }

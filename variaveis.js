@@ -1,3 +1,3 @@
 let paises = ["Cuba", "Holanda", "China", "Chile"];
-
-console.log(paises[3]);
+paises[2] = "Japão";
+console.log(paises);

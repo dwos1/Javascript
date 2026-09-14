@@ -1,3 +1,6 @@
-let paises = ["Cuba", "Holanda", "China", "Chile"];
-paises[2] = "Japão";
-console.log(paises);
+let name = ["João", "Lucas", "Carlos"]
+
+name.unshift("Kaio");
+name.pop();
+
+console.log(name)

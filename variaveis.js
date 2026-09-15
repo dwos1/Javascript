@@ -1,5 +1,6 @@
-let paises = ["Ucrânia", "Lituâna", "Portugal"];
+let numero = [5, 10, 15, 20];
 
-for(contador = 0; contador<paises.length; contador++){
-    console.log(paises[contador]);
+for(let contador = 0; contador<numero.length; contador++){
+    
+    console.log(numero[contador]);
 }

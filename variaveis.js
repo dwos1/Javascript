@@ -1,6 +1,5 @@
-let name = ["João", "Lucas", "Carlos"]
+let paises = ["Ucrânia", "Lituâna", "Portugal"];
 
-name.unshift("Kaio");
-name.pop();
-
-console.log(name)
+for(contador = 0; contador<paises.length; contador++){
+    console.log(paises[contador]);
+}

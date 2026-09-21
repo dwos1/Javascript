@@ -1,3 +1,3 @@
-for(let contador = 3; contador <= 15; contador = contador + 3){
+for(let contador = 15; contador >= 3; contador = contador - 3){
     console.log(contador)
 }

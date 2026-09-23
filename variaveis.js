@@ -1,6 +1,6 @@
-let numero = [5, 10, 15, 20];
-
-for(let contador = 0; contador<numero.length; contador++){
+let resultado = 0;
+for(let contador = 1; contador<=5; contador++){
+    resultado = resultado + (contador * 2);
     
-    console.log(numero[contador]);
+console.log(resultado)
 }
